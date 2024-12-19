@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -61,37 +62,37 @@
 
         ein {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-                &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans        &trans        &trans     &trans          &trans    &trans    &trans         &trans     &trans     &trans  &trans
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans        &trans        &trans     &trans          &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
+                      &trans        &trans     &trans          &trans    &trans    &trans         &trans     &trans
             >;
         };
 
         zwei {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &bootloader
+&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans        &trans        &trans
+&sys_reset   &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &sys_reset
+                     &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans
             >;
         };
 
         drei {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans     &kp MINUS   &kp N7        &kp N8        &kp N9        &kp PLUS        &trans  &trans           &trans     &trans    &trans         &trans
+&kp COMMA  &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL       &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp LALT  &kp RIGHT_WIN  &trans
+&trans     &kp SLASH   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK    &trans  &trans           &trans     &trans    &trans         &trans
+                       &kp N0        &trans        &trans        &kp SPACE       &trans  &trans           &trans     &trans
             >;
         };
 
         fier {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans     &kp MINUS  &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS    &trans  &trans      &trans     &trans        &trans         &trans
+&trans     &kp DOT    &kp DOLLAR             &kp PERCENT   &kp CARET             &trans      &trans  &kp RSHIFT  &kp RCTRL  &kp LEFT_ALT  &kp RIGHT_WIN  &trans
+&kp GRAVE  &trans     &kp EXCL               &kp AT_SIGN   &kp HASH              &trans      &trans  &trans      &trans     &trans        &trans         &trans
+                      &kp RIGHT_PARENTHESIS  &trans        &trans                &trans      &trans  &trans      &trans     &trans
             >;
         };
     };
