@@ -51,7 +51,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        def {
             bindings = <
 &kp ESC    &kp Q  &kp W             &kp E     &kp R      &kp T          &kp Y        &kp U            &kp I      &kp O              &kp P     &kp MINUS
 &kp LCTRL  &kp A  &kp S             &kp D     &kp F      &kp G          &kp H        &kp J            &kp K      &kp L              &kp SEMI  &kp SQT
@@ -60,7 +60,7 @@
             >;
         };
 
-        ein {
+        nav {
             bindings = <
 &trans  &trans        &trans        &trans     &trans          &trans    &trans    &trans         &trans     &trans     &trans  &trans
 &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
@@ -69,7 +69,7 @@
             >;
         };
 
-        zwei {
+        sys {
             bindings = <
 &bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &bootloader
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans        &trans        &trans
@@ -78,7 +78,7 @@
             >;
         };
 
-        drei {
+        num {
             bindings = <
 &kp LEFT_PARENTHESIS   &kp MINUS   &kp N7        &kp N8        &kp N9        &kp PLUS        &trans  &trans           &trans     &trans    &trans         &trans
 &kp COMMA              &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL       &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp LALT  &kp RIGHT_WIN  &trans
@@ -87,7 +87,7 @@
             >;
         };
 
-        fier {
+        sym {
             bindings = <
 &kp LEFT_BRACE   &kp MINUS  &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS        &trans  &trans      &trans     &trans        &trans         &trans
 &kp COMMA        &kp DOT    &kp DOLLAR             &kp PERCENT   &kp CARET             &kp EQUAL       &trans  &kp RSHIFT  &kp RCTRL  &kp LEFT_ALT  &kp RIGHT_WIN  &trans
