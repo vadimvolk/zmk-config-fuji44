@@ -12,4 +12,5 @@ if SHIELD_FUJI44_LEFT || SHIELD_FUJI44_RIGHT
 
 config ZMK_SPLIT
     default y
+
 endif

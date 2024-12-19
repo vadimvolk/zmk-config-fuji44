@@ -31,8 +31,5 @@
             , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
-
-            / "cols": [ "D4", "C6", "D7", "E6", "B4", "B5" ],
-            / "rows": [ "B1", "B3", "B2", "B6" ]
     };
 };
